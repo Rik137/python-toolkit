@@ -12,4 +12,11 @@ def sum_if_less_than(query, *args: int) -> int | None:
     total = sum(args)
     return total if total < query else None
 
-
+def sum_even(nums: list[int]) -> int | None:
+    """
+    Return the sum of even
+    Return None if the list is empty.
+    """
+    if not nums:
+        return None
+    return sum(n for n in nums if n % 2 == 0)

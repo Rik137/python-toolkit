@@ -30,3 +30,14 @@ def get_longest_string(items: Iterable[str] | None) -> str | None:
         return max(items, key=len)
     except ValueError:
         return None
+
+def filter_even_length_strings(items: Iterable[str] | None) -> list[str] | None:
+    """
+    Return strings with even length from the given iterable.
+    Return None if items is None.
+    Return empty list if no even-length strings are found.
+    """
+    if items is None:
+        return None
+
+    return [s for s in items if len(s) % 2 == 0]

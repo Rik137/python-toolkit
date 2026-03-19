@@ -1,4 +1,4 @@
-from toolkit.math_tools.math_utils import sum_even
+from toolkit.math_tools.math_tools import sum_even
 
 def test_sum_even_with_even_numbers():
     assert sum_even([2, 2, 3]) == 4

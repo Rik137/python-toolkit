@@ -1,4 +1,4 @@
-from toolkit.math_tools.math_utils import sum_if_less_than, sum_even
+from toolkit.math_tools.math_tools import sum_if_less_than, sum_even
 
 def test_sum_if_less_than_basic():
     assert sum_if_less_than(50, 10, 10, 10) == 30

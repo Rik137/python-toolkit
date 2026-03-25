@@ -1,5 +1,5 @@
 from typing import Iterable
-from toolkit.constants.const import get_vowels
+from toolkit.constants.const import  VOWELS
 
 """
 String filtering utilities.
@@ -16,8 +16,7 @@ def remove_vowels(items: str | None) -> str | None:
     """
     if not items:
         return None
-    vowels = get_vowels()
-    return "".join(s for s in items if s not in vowels)
+    return "".join(s for s in items if s not in VOWELS)
 
 def get_longest_string(items: Iterable[str] | None) -> str | None:
     """

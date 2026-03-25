@@ -39,5 +39,8 @@ def filter_even_length_strings(items: Iterable[str] | None) -> list[str] | None:
     """
     if items is None:
         return None
-
     return [s for s in items if len(s) % 2 == 0]
+
+def filter_type_str(items: Iterable) -> list[str]:
+    """Return only string elements from iterable."""
+    return [s for s in items if isinstance(s, str)]
